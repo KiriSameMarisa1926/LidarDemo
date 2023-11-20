@@ -40,7 +40,7 @@
 
 #include "sl_lidar_protocol.h"
 
- // Commands
+ // Commands 十六进制命令定义表
  //-----------------------------------------
 
 

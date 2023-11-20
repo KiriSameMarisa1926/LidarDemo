@@ -33,7 +33,7 @@
 #include "sl_lidar_driver.h"
 
 namespace sl {
-	class SL_LidarDriver :public ILidarDriver
+	class SL_LidarDriver :public ILidarDriver //抽象类的具体实现
 	{
 		public:
 			enum {

@@ -67,10 +67,7 @@ namespace sl {
     } while (0)
 #endif
 
-    /**
-    * Lidar scan mode
-    */
-    struct LidarScanMode
+    struct LidarScanMode  //雷达扫描模式结构规范定义
     {
         // Mode id
         sl_u16  id;
@@ -81,7 +78,7 @@ namespace sl {
         // Max distance in this scan mode (in meters)
         float   max_distance;
 
-        // The answer command code for this scan mode
+        // The answer command code for this scan mode  应答代码
         sl_u8   ans_type;
 
         // The name of scan mode (padding with 0 if less than 64 characters)
@@ -126,15 +123,15 @@ namespace sl {
         }
     };
 
-    enum LIDARTechnologyType {
+    enum LIDARTechnologyType {//雷达测距方式
         LIDAR_TECHNOLOGY_UNKNOWN = 0,
-        LIDAR_TECHNOLOGY_TRIANGULATION = 1,
-        LIDAR_TECHNOLOGY_DTOF = 2,
-        LIDAR_TECHNOLOGY_ETOF = 3,
-        LIDAR_TECHNOLOGY_FMCW = 4,
+        LIDAR_TECHNOLOGY_TRIANGULATION = 1,//三角测距
+        LIDAR_TECHNOLOGY_DTOF = 2,//直线测量时间差
+        LIDAR_TECHNOLOGY_ETOF = 3,//不知道
+        LIDAR_TECHNOLOGY_FMCW = 4,//调频连续波
     };
 
-    enum LIDARMajorType {
+    enum LIDARMajorType {//产品型号
         LIDAR_MAJOR_TYPE_UNKNOWN = 0,
         LIDAR_MAJOR_TYPE_A_SERIES = 1,
         LIDAR_MAJOR_TYPE_S_SERIES = 2,
@@ -143,7 +140,7 @@ namespace sl {
         LIDAR_MAJOR_TYPE_C_SERIES = 6,
     };
 
-    enum LIDARInterfaceType {
+    enum LIDARInterfaceType {//接口类型定义
         LIDAR_INTERFACE_UART = 0,
         LIDAR_INTERFACE_ETHERNET = 1,
         LIDAR_INTERFACE_USB = 2,
@@ -153,20 +150,20 @@ namespace sl {
         LIDAR_INTERFACE_UNKNOWN = 0xFFFF,
     };
 
-    struct SlamtecLidarTimingDesc {
+    struct SlamtecLidarTimingDesc {//连接数据的结构体定义
 
-        sl_u32  sample_duration_uS;
-        sl_u32  native_baudrate;
+        sl_u32  sample_duration_uS;//样本处理时间
+        sl_u32  native_baudrate;//波特率
         
-        sl_u32  linkage_delay_uS;
+        sl_u32  linkage_delay_uS;//连接延时（纳秒）
 
-        LIDARInterfaceType native_interface_type;
+        LIDARInterfaceType native_interface_type;//接口类型
 
-        bool    native_timestamp_support;
+        bool    native_timestamp_support;//本地时间戳支持（是/否）
     };
 
     /**
-    * Abstract interface of communication channel
+    * Abstract interface of communication channel 通信信道的抽象接口
     */
     class IChannel
     {
@@ -212,7 +209,7 @@ namespace sl {
 
         /**
         * Send data to remote endpoint
-        * \param data The data buffer
+        * \param data The data buffer 数据缓冲区的数据
         * \param size The size of data buffer (in bytes)
         * \return Bytes written (negative for write failure)
         */
@@ -237,10 +234,7 @@ namespace sl {
 
     };
 
-    /**
-    * Abstract interface of serial port channel
-    */
-    class ISerialPortChannel : public IChannel
+    class ISerialPortChannel : public IChannel //串口通道的接口抽象
     {
     public:
         virtual ~ISerialPortChannel() {}
@@ -264,14 +258,14 @@ namespace sl {
     * \param ip IP address of the device
     * \param port TCP port
     */
-    Result<IChannel*> createTcpChannel(const std::string& ip, int port);
+    Result<IChannel*> createTcpChannel(const std::string& ip, int port);//用不上
 
     /**
     * Create a UDP channel
     * \param ip IP address of the device
     * \param port UDP port
     */
-    Result<IChannel*> createUdpChannel(const std::string& ip, int port);
+    Result<IChannel*> createUdpChannel(const std::string& ip, int port);//用不上
 
     enum MotorCtrlSupport
     {
@@ -286,15 +280,12 @@ namespace sl {
         CHANNEL_TYPE_UDP = 0x2,
     };
 
-        /**
-    * Lidar motor info
-    */
-    struct LidarMotorInfo
+    struct LidarMotorInfo//雷达电机信息
     {
         MotorCtrlSupport motorCtrlSupport;
 
         // Desire speed
-        sl_u16 desired_speed;
+        sl_u16 desired_speed;//期望转速
 
         // Max speed 
         sl_u16 max_speed;
@@ -312,7 +303,7 @@ namespace sl {
         /**
         * Connect to LIDAR via channel
         * \param channel The communication channel
-        *                    Note: you should manage the lifecycle of the channel object, make sure it is alive during lidar driver's lifecycle
+        * Note: you should manage the lifecycle of the channel object, make sure it is alive during lidar driver's lifecycle
         */
         virtual sl_result connect(IChannel* channel) = 0;
 
@@ -402,7 +393,7 @@ namespace sl {
         /// \param conf             Network parameter that LPX series lidar owned
         /// \param timeout          The operation timeout value (in millisecond) for the ethernet udp communication
         virtual sl_result getLidarIpConf( sl_lidar_ip_conf_t& conf, sl_u32 timeout = DEFAULT_TIMEOUT) = 0;
-  // 
+
 		/////Get LPX series lidar's MAC address
 		///
 		/// \param macAddrArray         The device MAC information returned from the LPX series lidar
@@ -540,7 +531,7 @@ namespace sl {
 
     /**
     * Create a LIDAR driver instance
-    *
+    * 雷达驱动示例
     * Example
     * Result<ISerialChannel*> channel = createSerialPortChannel("/dev/ttyUSB0", 115200);
     * assert((bool)channel);
