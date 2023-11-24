@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\include">
+      <UniqueIdentifier>{702a5b60-5222-46c8-aad0-245b726e19cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\hal">
+      <UniqueIdentifier>{f0faa930-3c7d-4a36-92a4-84516bc63d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\dataunpacker">
+      <UniqueIdentifier>{ee13e037-ab17-41f4-8446-99591b16086e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\dataunpacker\unpacker">
+      <UniqueIdentifier>{61b191de-f2a7-4adc-8c19-babcc270d2dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\arch">
+      <UniqueIdentifier>{3b7e9598-47f0-4ee8-818d-2f0692f1498d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\arch\win32">
+      <UniqueIdentifier>{87f192c8-f60b-4311-bad1-f87ef471602e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SDKCpp">
+      <UniqueIdentifier>{e90bf042-fd27-4f1d-9628-2dca162662af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\sl_crc.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sl_lidar.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sl_lidar_cmd.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sl_lidar_driver.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sl_lidar_driver_impl.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sl_lidar_protocol.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sl_types.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="sl_async_transceiver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sl_lidarprotocol_codec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\abs_rxtx.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\assert.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\byteops.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\byteorder.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\event.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\locker.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\socket.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\thread.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\types.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\util.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="hal\waiter.h">
+      <Filter>头文件\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rplidar.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rplidar_cmd.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rplidar_driver.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rplidar_protocol.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rptypes.h">
+      <Filter>头文件\include</Filter>
+    </ClInclude>
+    <ClInclude Include="sdkcommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dataunpacker\dataunnpacker_commondef.h">
+      <Filter>头文件\dataunpacker</Filter>
+    </ClInclude>
+    <ClInclude Include="dataunpacker\dataunnpacker_internal.h">
+      <Filter>头文件\dataunpacker</Filter>
+    </ClInclude>
+    <ClInclude Include="dataunpacker\dataunpacker.h">
+      <Filter>头文件\dataunpacker</Filter>
+    </ClInclude>
+    <ClInclude Include="dataunpacker\dataupacker_namespace.h">
+      <Filter>头文件\dataunpacker</Filter>
+    </ClInclude>
+    <ClInclude Include="dataunpacker\unpacker\handler_capsules.h">
+      <Filter>头文件\dataunpacker\unpacker</Filter>
+    </ClInclude>
+    <ClInclude Include="dataunpacker\unpacker\handler_hqnode.h">
+      <Filter>头文件\dataunpacker\unpacker</Filter>
+    </ClInclude>
+    <ClInclude Include="dataunpacker\unpacker\handler_normalnode.h">
+      <Filter>头文件\dataunpacker\unpacker</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\win32\arch_win32.h">
+      <Filter>头文件\arch\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\win32\net_serial.h">
+      <Filter>头文件\arch\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\win32\timer.h">
+      <Filter>头文件\arch\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="arch\win32\winthread.hpp">
+      <Filter>头文件\arch\win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunpacker\dataunpacker.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunpacker\unpacker\handler_capsules.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunpacker\unpacker\handler_hqnode.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\win32\net_serial.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunpacker\unpacker\handler_normalnode.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\win32\net_socket.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="rplidar_driver.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sl_async_transceiver.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sl_crc.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sl_lidar_driver.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sl_lidarprotocol_codec.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sl_serial_channel.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sl_udp_channel.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="sl_tcp_channel.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="arch\win32\timer.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="thread.cpp">
+      <Filter>源文件\SDKCpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

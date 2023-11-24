@@ -1,0 +1,17 @@
+C:\Users\Marisa\Desktop\Other\SerialPortSample\arch\win32\net_serial.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\net_serial.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\arch\win32\net_socket.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\net_socket.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\arch\win32\timer.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\timer.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\dataunpacker\dataunpacker.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\dataunpacker.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\dataunpacker\unpacker\handler_capsules.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\handler_capsules.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\dataunpacker\unpacker\handler_hqnode.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\handler_hqnode.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\dataunpacker\unpacker\handler_normalnode.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\handler_normalnode.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\rplidar_driver.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\rplidar_driver.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\sl_async_transceiver.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\sl_async_transceiver.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\sl_crc.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\sl_crc.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\sl_lidarprotocol_codec.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\sl_lidarprotocol_codec.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\sl_lidar_driver.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\sl_lidar_driver.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\sl_serial_channel.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\sl_serial_channel.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\sl_tcp_channel.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\sl_tcp_channel.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\sl_udp_channel.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\sl_udp_channel.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\test.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\test.obj
+C:\Users\Marisa\Desktop\Other\SerialPortSample\thread.cpp;C:\Users\Marisa\Desktop\Other\SerialPortSample\x64\Debug\thread.obj
