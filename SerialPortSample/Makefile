@@ -1,13 +1,4 @@
 #/*
-# *  RPLIDAR SDK
-# *
-# *  Copyright (c) 2009 - 2014 RoboPeak Team
-# *  http://www.robopeak.com
-# *  Copyright (c) 2014 - 2019 Shanghai Slamtec Co., Ltd.
-# *  http://www.slamtec.com
-# *
-# */
-#/*
 # * Redistribution and use in source and binary forms, with or without
 # * modification, are permitted provided that the following conditions are met:
 # *
